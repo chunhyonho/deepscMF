@@ -1,2 +1,3 @@
 # deepNMFsc
-This represitory contains deepNMFsc model for single cell dataset
+This represitory contains deepNMFsc model for single cell dataset.
+
