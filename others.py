@@ -13,31 +13,6 @@ import matplotlib.pyplot as plt
 from os.path import join
 import umap
 import os
-
-class CustomDataset(Dataset):
-  def __init__(self):
-    data = pd.read_csv("data/purepbmc.csv")
-    data= data.to_numpy()
-    data = torch.Tensor(data)
-    self.x_data = data[:,1:]
-    self.y_data = data[:,0]
-
-  # 총 데이터의 개수를 리턴
-  def __len__(self):
-    return len(self.x_data)
-
-  # 인덱스를 입력받아 그에 맵핑되는 입출력 데이터를 파이토치의 Tensor 형태로 리턴
-  def __getitem__(self, idx):
-    x = self.x_data[idx]
-    y = self.y_data[idx]
-    return x, y
-
-
-dataset = CustomDataset()
-
-
-
-train_dataloader = DataLoader(dataset, batch_size=64, shuffle=True)
 from sklearn.preprocessing import StandardScaler
 import random
 import umap

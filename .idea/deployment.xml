@@ -5,7 +5,7 @@
       <paths name="skysocean@sobolev.kaist.ac.kr:22">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
